@@ -1,0 +1,197 @@
+<link href="https://fonts.cdnfonts.com/css/poppins?styles=20383" rel="stylesheet">
+       
+                           
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balkan Rose Roleplay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="roserp.jpg" alt="Slika" class="slika">
+    <header>
+        <div class="container">
+            <h1>Balkan Rose Roleplay</h1>
+            <nav>
+                <ul>
+                    <li><a style="color: rgb(255, 255, 255);" href="file:///C:/Users/amarc/OneDrive/Desktop/website/index.html#staff">Pocetna Stranica</a></li>
+                    <li><a style="color: rgb(255, 255, 255);" href="file:///C:/Users/amarc/OneDrive/Desktop/websiteORG/index.html#purchase">Organizacije</a></li>
+                    <li><a style="color: rgb(255, 255, 255);" href="file:///C:/Users/amarc/OneDrive/Desktop/websitePRIORITY/index.html">Priority</a></li>
+                    <li><a style="color: rgb(255, 255, 255);" href="file:///C:/Users/amarc/OneDrive/Desktop/websiteAUTA/index.html#staff">Custom Auta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+    <section id="purchase" class="content">
+        <div style="display: flex; align-items: center;">
+            <img src="michael.jpg" alt="Description" style="width: 100px; height: auto; margin-right: 10px;">
+            <h2><span class="large-text">Organizacije </span></h2>
+        </div> 
+        </p><span class="bigger-text">U DONATORSKOJ ORGANIZACIJI MOZETE IMATI CUSTOM IME, AUTA, CINOVE I BAZU ALI ZA TO SE MORATE JAVITI NA TICKET NA NASEM DISCORD SERVER!</span></p>
+         </p><span class="bigger-text">Donatorske Organizacije:</span> <p><span class="red-text">🚗 AutoMafija</span> | <span class="green-text">💵 Playboy</span> | <span class="redtm-text">💊 La Cosa Nostra</span> | <span class="bordo-text">🦅 KGB</span> | <span class="bordomanje-text">🌹 Medellin Cartel</span>   <span class="bigger-text"><span style="margin-left: 100px;"><span class="green-text">Cijena custom organizacije je 20€</span></span></span></p>
+        </p><span class="green-text">Prije svake uplate javite se na Ticket na nasem discord serveru!</span>
+    </p>              </li><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plaćanje putem PayPal-a</title>
+    </head>
+    
+
+
+        <form id="paypalForm">
+            <label for="amount">Upisite Cifru (USD):</label>
+            <input type="number" id="amount" name="amount" step="0.01" required>
+            <br><br>
+        </form>
+
+        <!-- PayPal gumb -->
+        <div id="paypal-button-container"></div>
+
+        <!-- Skripta za PayPal integraciju -->
+        <script src="https://www.paypal.com/sdk/js?client-id=ARUjXS1TfP5kGb2m2LI5jtWxQ73izBNEpD-gHWfpEuVFegVQ-lx2GwJ-CTKCU1bHkjYr0qWw9KWRnSJS
+        "></script>
+        <script>
+            // Inicijalizacija PayPal SDK-a
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    // Funkcija koja kreira novu PayPal narudžbinu
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: document.getElementById('amount').value // Dobijanje iznosa iz polja
+                            }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    // Funkcija koja se izvršava kada korisnik odobri plaćanje
+                    return actions.order.capture().then(function(details) {
+                        // U ovoj funkciji možete dodati dodatnu logiku nakon uspešnog plaćanja
+                        alert('Plaćanje uspešno! Transakcija ID: ' + details.id);
+                    });
+                }
+
+        </script>
+
+    <body>
+    </html>
+    </li></p>
+  </div>
+    </section>
+    
+
+
+
+
+
+
+
+    
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Balkan Rose Roleplay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Text Example</title>
+    <style>
+        .red-text {
+            color: red;
+        }
+        .blue-text {
+            color: rgb(0, 17, 255);
+        }
+        .green-text {
+            color: rgb(0, 197, 0);
+        }
+        .bordo-text {
+            color: rgb(131, 7, 7);
+        }
+        .redtm-text {
+            color: rgb(199, 0, 0);
+        }
+        .bordomanje-text {
+            color: rgb(143, 7, 7);
+        }
+        .yellow-text {
+            color: rgb(255, 208, 0);
+        }
+        .lime-text {
+            color: rgb(0, 255, 13);
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increase Text Size Example</title>
+    <style>
+        .large-text {
+            font-size: 1.8em; /* 2 puta veće od trenutne veličine fonta */
+        }
+        .bigger-text {
+            font-size: 1.2em; /* 2 puta veće od trenutne veličine fonta */
+        }
+        .cobig-text {
+            font-size: 4.2em; /* 2 puta veće od trenutne veličine fonta */
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Text to the Right</title>
+</head>
+<body>
+    <p></p>
+</body>
+</html>
+
+
+
+
+
+
+
